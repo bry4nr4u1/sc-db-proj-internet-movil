@@ -1,0 +1,22 @@
+USE [INTERNET]
+GO
+/****** Object:  Table [INTERNET].[TMP_LOG_ERROR]    Script Date: 5/05/2024 08:26 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [INTERNET].[TMP_LOG_ERROR](
+	[CODERR] [varchar](20) NULL,
+	[DSCERR] [varchar](1000) NULL,
+	[FECERR] [varchar](30) NULL,
+	[STSERR] [char](3) NULL,
+	[NOMMAQ] [varchar](50) NULL,
+	[NOMSRV] [varchar](50) NULL,
+	[NOMPCK] [varchar](50) NULL,
+	[NOMTSK] [varchar](50) NULL,
+	[NOMTSKERR] [varchar](50) NULL,
+	[NOMARCERR] [varchar](200) NULL
+) ON [PRIMARY]
+GO
+ALTER TABLE [INTERNET].[TMP_LOG_ERROR] ADD  DEFAULT ('ACT') FOR [STSERR]
+GO
