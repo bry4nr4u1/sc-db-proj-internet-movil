@@ -1,5 +1,5 @@
 ---
-name: "Reporte de Bug o Solicitud de Característica"
+name: "Reporte de Bug o Solicitud de Característica (Markdown)"
 about: "Reporta un problema o solicita una nueva característica en el código SQL"
 title: "[Bug/Feature] Título claro y conciso"
 labels: ["bug", "feature"]
