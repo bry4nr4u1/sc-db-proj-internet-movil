@@ -1,0 +1,67 @@
+name: "Reporte de Bug o Solicitud de Característica"
+description: "Usa este formulario para reportar un bug o solicitar una nueva característica en el código SQL."
+title: "[Bug/Feature] Título claro y conciso"
+labels: ["bug", "feature"]
+
+body:
+  - type: markdown
+    attributes:
+      value: "Por favor, completa los campos para reportar el problema o describir la nueva característica."
+
+  - type: input
+    attributes:
+      label: "Descripción del Problema o Solicitud de Característica"
+      description: "Descripción breve y clara del problema o de la característica solicitada."
+      placeholder: "Explica el propósito de este issue."
+
+  - type: input
+    attributes:
+      label: "Consulta SQL o Procedimiento afectado"
+      description: "Proporciona el nombre de la consulta, procedimiento, vista o función afectada."
+      placeholder: "Ejemplo: usp_ObtenerConexionesPorRegion"
+
+  - type: textarea
+    attributes:
+      label: "Pasos para Reproducir (solo para errores)"
+      description: "Incluye los pasos detallados y el comportamiento actual y esperado."
+      placeholder: "1. Paso uno\n2. Paso dos\n3. Comportamiento actual y esperado."
+
+  - type: dropdown
+    attributes:
+      label: "Versión de SQL Server"
+      description: "Especifica la versión de SQL Server en la que se encontró el problema."
+      options:
+        - "SQL Server 2019"
+        - "SQL Server 2017"
+        - "SQL Server 2016"
+        - "Otro"
+
+  - type: input
+    attributes:
+      label: "Base de datos"
+      description: "Nombre de la base de datos en la que ocurre el problema."
+      placeholder: "Ejemplo: DB_InternetMovilPeru"
+
+  - type: input
+    attributes:
+      label: "Región específica (si aplica)"
+      description: "Nombre de la región (por ejemplo, Lima, Cusco) si el problema es específico de una ubicación."
+      placeholder: "Ejemplo: Lima"
+
+  - type: textarea
+    attributes:
+      label: "Datos de Prueba"
+      description: "Proporciona algunos datos de prueba relevantes para evaluar la consulta o el procedimiento."
+      placeholder: "ID de cliente, fecha, región, etc."
+
+  - type: textarea
+    attributes:
+      label: "Posible Solución"
+      description: "Describe una posible solución si tienes una sugerencia."
+      placeholder: "Explica brevemente cómo resolverías este problema."
+
+  - type: textarea
+    attributes:
+      label: "Contexto Adicional"
+      description: "Proporciona cualquier otra información relevante para el issue."
+      placeholder: "Incluye información adicional que pueda ser útil."
